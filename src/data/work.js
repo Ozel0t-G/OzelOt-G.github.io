@@ -7,8 +7,8 @@ export const workItems = [
   },
   {
     title: 'Security Hardening Notes',
-    description: 'System hardening notes and checklists for cloud, endpoints, and on-prem.',
-    link: '#',
+    description: 'Audity A local-first cybersecurity audit workspace for structured assessments, findings, risk registers, and reports.',
+    link: 'https://github.com/Ozel0t-G/Audity-Streamline-the-Audit-Process',
     linkLabel: 'View on GitHub',
   },
   {
