@@ -2,7 +2,7 @@ export const workItems = [
   {
     title: 'SOC Playbook Collection',
     description: 'Practical playbooks and runbooks for common SOC workflows and scenarios.',
-    link: '#',
+    link: 'https://github.com/Ozel0t-G/Incident-Response-Playbooks',
     linkLabel: 'View on GitHub',
   },
   {
