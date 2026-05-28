@@ -1,6 +1,6 @@
 ---
 title: "Why False Positives Are a Business Problem"
-date: "2024-05-12"
+date: "2025-05-12"
 description: "Too many alerts don’t just waste time—they erode trust in detection, drain resources, and hide real risk."
 tags: ["Security Operations", "Detection Engineering"]
 readingTime: "6 min read"

@@ -1,6 +1,6 @@
 ---
 title: "Incident Response Fails When Nobody Owns the Next Decision"
-date: "2024-04-07"
+date: "2025-04-07"
 description: "Speed matters, but clarity of ownership matters more. The middle of an incident is where ambiguity causes the most damage."
 tags: ["Incident Response", "Security Leadership"]
 readingTime: "7 min read"

@@ -1,6 +1,6 @@
 ---
 title: "The Difference Between Compliance and Security"
-date: "2024-04-28"
+date: "2025-04-28"
 description: "Compliance checks a box. Security reduces risk. Understanding the gap is where better decisions begin."
 tags: ["GRC & Compliance", "Security Leadership"]
 readingTime: "5 min read"

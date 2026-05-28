@@ -1,6 +1,6 @@
 ---
 title: "You really do not understand Governance Risk and Compliance until someone shows you how GRC works in life decisions."
-date: "2024-05-13"
+date: "2025-05-13"
 description: "None of that replaces learning from someone who has actually been a Chief Information Security Officer and carried responsibility as a CISO."
 tags: ["Incident Response", "Security Leadership"]
 readingTime: "5 min read"
