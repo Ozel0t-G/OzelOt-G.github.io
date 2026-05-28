@@ -74,14 +74,14 @@ function About() {
         <header className="page-header about-header">
           <div>
             <h1>About Ozel0t</h1>
-            <p>A personal space for cybersecurity notes, articles, and selected work.</p>
+            <p>A personal space for cybersecurity notes and selected work.</p>
             <p>
               I created Ozel0t to document what I learn, build, and explore in cybersecurity. This
               site is where I share practical notes and thoughtful perspective from real-world
               experience.
             </p>
-            <Link className="text-link" to="/articles">
-              Read my articles <span aria-hidden="true">→</span>
+            <Link className="text-link" to="/notes">
+              Read my notes <span aria-hidden="true">→</span>
             </Link>
           </div>
           <img

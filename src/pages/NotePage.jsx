@@ -7,7 +7,7 @@ function stripMarkdownTitle(content) {
   return content.replace(/^# .+\n+/, '');
 }
 
-function ArticlePage() {
+function NotePage() {
   const { slug } = useParams();
   const post = getPostBySlug(slug);
 
@@ -22,30 +22,30 @@ function ArticlePage() {
       : post.description;
 
   return (
-    <article className="article-page">
-      <div className="article-container">
-        <Link className="back-link text-link" to="/articles">
-          <span aria-hidden="true">←</span> Back to articles
+    <article className="note-page">
+      <div className="note-container">
+        <Link className="back-link text-link" to="/notes">
+          <span aria-hidden="true">←</span> Back to notes
         </Link>
         <TopicPills topics={post.tags.slice(0, 1)} />
         <h1>{post.title}</h1>
-        <div className="article-detail-meta">
+        <div className="note-detail-meta">
           <time dateTime={post.date}>{post.formattedDate}</time>
           <span>{post.readingTime}</span>
         </div>
-        <p className="article-description">{description}</p>
+        <p className="note-description">{description}</p>
         <hr />
         <div className="markdown-body">
           <ReactMarkdown>{stripMarkdownTitle(post.content)}</ReactMarkdown>
         </div>
-        <div className="article-bottom-tags">
+        <div className="note-bottom-tags">
           <TopicPills topics={post.tags} />
         </div>
         <section className="more-reading" aria-labelledby="more-reading-title">
           <h2 id="more-reading-title">More reading</h2>
           <div className="more-reading-grid">
             {related.map((item) => (
-              <Link to={`/articles/${item.slug}`} key={item.slug}>
+              <Link to={`/notes/${item.slug}`} key={item.slug}>
                 <span>{item.formattedDate}</span>
                 <strong>{item.title}</strong>
               </Link>
@@ -57,4 +57,4 @@ function ArticlePage() {
   );
 }
 
-export default ArticlePage;
+export default NotePage;

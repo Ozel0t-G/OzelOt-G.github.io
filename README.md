@@ -1,6 +1,6 @@
 # Ozel0t
 
-Personal cybersecurity notes, articles, and selected work built with React and Vite.
+Personal cybersecurity notes and selected work built with React and Vite.
 
 ## Tech Stack
 
@@ -26,13 +26,13 @@ npm run build
 
 The production output is generated in the `dist` folder.
 
-## Add a New Article
+## Add a New Note
 
 Create a new `.md` file in `src/content/posts/` with frontmatter:
 
 ```md
 ---
-title: "Article Title"
+title: "Note Title"
 date: "2024-05-12"
 description: "Short description."
 tags: ["Security Operations"]

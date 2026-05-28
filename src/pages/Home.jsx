@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import ArticleList from '../components/ArticleList.jsx';
+import NoteList from '../components/NoteList.jsx';
 import SectionHeading from '../components/SectionHeading.jsx';
 import TopicPills from '../components/TopicPills.jsx';
 import WorkList from '../components/WorkList.jsx';
@@ -20,8 +20,8 @@ function Home() {
           <p className="hero-subtitle">{site.subtitle}</p>
           <p className="hero-intro">{site.intro}</p>
           <div className="link-row">
-            <Link className="text-link" to="/articles">
-              Read articles <span aria-hidden="true">→</span>
+            <Link className="text-link" to="/notes">
+              Read notes <span aria-hidden="true">→</span>
             </Link>
             <Link className="text-link" to="/work">
               View selected work <span aria-hidden="true">→</span>
@@ -32,10 +32,10 @@ function Home() {
 
       <section className="page-section">
         <div className="container">
-          <SectionHeading title="Latest Articles" />
-          <ArticleList posts={posts.slice(0, 3)} compact />
-          <Link className="section-link text-link" to="/articles">
-            Browse all articles <span aria-hidden="true">→</span>
+          <SectionHeading title="Latest Notes" />
+          <NoteList posts={posts.slice(0, 3)} compact />
+          <Link className="section-link text-link" to="/notes">
+            Browse all notes <span aria-hidden="true">→</span>
           </Link>
         </div>
       </section>

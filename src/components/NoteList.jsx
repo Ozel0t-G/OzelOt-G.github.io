@@ -1,18 +1,18 @@
 import { Link } from 'react-router-dom';
 import TopicPills from './TopicPills.jsx';
 
-function ArticleList({ posts, compact = false }) {
+function NoteList({ posts, compact = false }) {
   return (
-    <div className={compact ? 'article-list article-list-compact' : 'article-list'}>
+    <div className={compact ? 'note-list note-list-compact' : 'note-list'}>
       {posts.map((post) => (
-        <article className="article-row" key={post.slug}>
+        <article className="note-row" key={post.slug}>
           <div>
             <h3>
-              <Link to={`/articles/${post.slug}`}>{post.title}</Link>
+              <Link to={`/notes/${post.slug}`}>{post.title}</Link>
             </h3>
             <p>{post.description}</p>
           </div>
-          <div className="article-meta">
+          <div className="note-meta">
             <time dateTime={post.date}>{post.formattedDate}</time>
             {!compact && <span>{post.readingTime}</span>}
           </div>
@@ -23,4 +23,4 @@ function ArticleList({ posts, compact = false }) {
   );
 }
 
-export default ArticleList;
+export default NoteList;

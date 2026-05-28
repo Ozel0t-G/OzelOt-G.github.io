@@ -12,7 +12,7 @@
   --accent: #5da8ff;
   --accent-soft: rgba(93, 168, 255, 0.12);
   --max-width: 1120px;
-  --article-width: 820px;
+  --note-width: 820px;
 }
 
 * {
@@ -64,8 +64,8 @@ p {
   margin-inline: auto;
 }
 
-.article-container {
-  width: min(100% - 48px, var(--article-width));
+.note-container {
+  width: min(100% - 48px, var(--note-width));
   margin-inline: auto;
 }
 
@@ -290,11 +290,11 @@ p {
   filter: drop-shadow(0 28px 34px rgba(0, 0, 0, 0.42)) drop-shadow(0 0 34px rgba(93, 168, 255, 0.16));
 }
 
-.article-list {
+.note-list {
   border-top: 1px solid var(--border);
 }
 
-.article-row {
+.note-row {
   display: grid;
   grid-template-columns: minmax(0, 1fr) auto auto;
   gap: 28px;
@@ -303,28 +303,28 @@ p {
   padding: 24px 0;
 }
 
-.article-row h3 {
+.note-row h3 {
   margin-bottom: 7px;
   color: var(--text);
   font-size: 20px;
   line-height: 1.3;
 }
 
-.article-row h3 a {
+.note-row h3 a {
   transition: color 180ms ease;
 }
 
-.article-row h3 a:hover,
-.article-row h3 a:focus-visible {
+.note-row h3 a:hover,
+.note-row h3 a:focus-visible {
   color: var(--accent);
 }
 
-.article-row p {
+.note-row p {
   max-width: 680px;
   margin-bottom: 0;
 }
 
-.article-meta {
+.note-meta {
   display: grid;
   gap: 4px;
   min-width: 112px;
@@ -334,7 +334,7 @@ p {
   white-space: nowrap;
 }
 
-.article-list-compact .pill-list {
+.note-list-compact .pill-list {
   justify-content: flex-end;
 }
 
@@ -475,7 +475,7 @@ p {
   border-top: 1px solid var(--border);
 }
 
-.article-page {
+.note-page {
   padding: 72px 0 86px;
 }
 
@@ -484,11 +484,11 @@ p {
   margin-bottom: 34px;
 }
 
-.article-page .pill-list {
+.note-page .pill-list {
   margin-bottom: 24px;
 }
 
-.article-page h1 {
+.note-page h1 {
   margin-bottom: 18px;
   color: var(--text);
   font-size: clamp(44px, 7vw, 72px);
@@ -497,7 +497,7 @@ p {
   line-height: 1.03;
 }
 
-.article-detail-meta {
+.note-detail-meta {
   display: flex;
   flex-wrap: wrap;
   gap: 12px;
@@ -506,13 +506,13 @@ p {
   color: var(--muted-2);
 }
 
-.article-detail-meta span::before {
+.note-detail-meta span::before {
   margin-right: 12px;
   color: var(--border-strong);
   content: "·";
 }
 
-.article-description {
+.note-description {
   max-width: 760px;
   margin-bottom: 34px;
   font-size: 19px;
@@ -583,7 +583,7 @@ hr {
   padding: 18px;
 }
 
-.article-bottom-tags {
+.note-bottom-tags {
   margin: 46px 0;
 }
 
@@ -684,17 +684,17 @@ hr {
 }
 
 @media (max-width: 900px) {
-  .article-row {
+  .note-row {
     grid-template-columns: 1fr;
     gap: 12px;
   }
 
-  .article-meta {
+  .note-meta {
     min-width: 0;
     text-align: left;
   }
 
-  .article-list-compact .pill-list {
+  .note-list-compact .pill-list {
     justify-content: flex-start;
   }
 
@@ -726,7 +726,7 @@ hr {
 
 @media (max-width: 640px) {
   .container,
-  .article-container {
+  .note-container {
     width: min(100% - 32px, var(--max-width));
   }
 
@@ -768,7 +768,7 @@ hr {
 
   .hero-intro,
   .page-header p,
-  .article-description,
+  .note-description,
   .markdown-body {
     font-size: 16px;
   }
@@ -778,12 +778,12 @@ hr {
   }
 
   .page-shell,
-  .article-page {
+  .note-page {
     padding: 52px 0 64px;
   }
 
   .page-header h1,
-  .article-page h1 {
+  .note-page h1 {
     font-size: 42px;
   }
 

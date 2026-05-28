@@ -1,21 +1,21 @@
-import ArticleList from '../components/ArticleList.jsx';
+import NoteList from '../components/NoteList.jsx';
 import { getPosts } from '../utils/posts.js';
 
-function Articles() {
+function Notes() {
   return (
     <section className="page-shell">
       <div className="container">
         <header className="page-header">
-          <h1>Articles</h1>
+          <h1>Notes</h1>
           <p>
             Notes and thoughts on security operations, incident response, detection engineering,
             and governance.
           </p>
         </header>
-        <ArticleList posts={getPosts()} />
+        <NoteList posts={getPosts()} />
       </div>
     </section>
   );
 }
 
-export default Articles;
+export default Notes;
