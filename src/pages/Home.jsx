@@ -10,10 +10,11 @@ import { getPosts } from '../utils/posts.js';
 
 function Home() {
   const posts = getPosts();
+  const heroImage = `url("${import.meta.env.BASE_URL}images/norway-security-hero.png")`;
 
   return (
     <>
-      <section className="hero-section">
+      <section className="hero-section" style={{ '--hero-image': heroImage }}>
         <div className="container">
           <h1>{site.headline}</h1>
           <p className="hero-subtitle">{site.subtitle}</p>

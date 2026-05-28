@@ -86,7 +86,7 @@ function About() {
           </div>
           <img
             className="about-polaroid"
-            src="/images/about-ozelot-polaroid.png"
+            src={`${import.meta.env.BASE_URL}images/about-ozelot-polaroid.png`}
             alt="Pixel art Ozel0t character holding a Norway travel book under northern lights"
           />
         </header>

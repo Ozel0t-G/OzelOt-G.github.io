@@ -142,7 +142,7 @@ p {
   z-index: -1;
   background:
     linear-gradient(90deg, rgba(3, 7, 18, 0.84) 0%, rgba(3, 7, 18, 0.56) 34%, rgba(3, 7, 18, 0.14) 68%),
-    url("/images/norway-security-hero.png");
+    var(--hero-image);
   background-position: center top;
   background-repeat: no-repeat;
   background-size: 100% auto;
