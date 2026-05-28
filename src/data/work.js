@@ -6,7 +6,7 @@ export const workItems = [
     linkLabel: 'View on GitHub',
   },
   {
-    title: 'Security Hardening Notes',
+    title: 'Audity — Streamline the Cybersecurity Audit Process',
     description: 'Audity A local-first cybersecurity audit workspace for structured assessments, findings, risk registers, and reports.',
     link: 'https://github.com/Ozel0t-G/Audity-Streamline-the-Audit-Process',
     linkLabel: 'View on GitHub',
