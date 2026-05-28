@@ -709,6 +709,11 @@ hr {
   margin-bottom: 20px;
 }
 
+.terms-block p {
+  text-align: justify;
+  hyphens: auto;
+}
+
 @media (max-width: 900px) {
   .note-row {
     grid-template-columns: 1fr;
