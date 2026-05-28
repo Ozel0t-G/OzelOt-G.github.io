@@ -30,6 +30,16 @@ function Impressum() {
             Diese Website ist ein persönliches Projekt mit Notizen und ausgewählten Arbeiten im
             Bereich Cybersecurity.
           </p>
+
+          <section className="terms-block" aria-labelledby="terms-title">
+            <h2 id="terms-title">Terms and Conditions</h2>
+
+            <h3>1 Introduction</h3>
+            <p>
+              Welcome to https://ozel0t-g.github.io/. By accessing our website, you agree to these
+              terms and conditions. Please read them carefully.
+            </p>
+          </section>
         </div>
       </div>
     </section>

@@ -35,7 +35,7 @@ function Footer() {
   return (
     <footer className="site-footer">
       <div className="container footer-inner">
-        <p>&copy; 2024 {site.name}</p>
+        <p>&copy; 2026 {site.name}</p>
         <div className="footer-actions">
           <Link className="footer-legal-link" to="/impressum">
             Impressum
