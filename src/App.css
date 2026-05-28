@@ -652,16 +652,34 @@ hr {
 
 .footer-links {
   display: flex;
-  gap: 18px;
+  gap: 12px;
 }
 
 .footer-links a {
+  display: inline-flex;
+  width: 34px;
+  height: 34px;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid transparent;
+  border-radius: 999px;
   color: var(--muted);
-  transition: color 180ms ease;
+  transition:
+    border-color 180ms ease,
+    color 180ms ease,
+    background 180ms ease;
+}
+
+.footer-links svg {
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
 }
 
 .footer-links a:hover,
 .footer-links a:focus-visible {
+  border-color: var(--border-strong);
+  background: var(--accent-soft);
   color: var(--accent);
 }
 

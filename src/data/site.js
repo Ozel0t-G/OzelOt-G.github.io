@@ -5,8 +5,8 @@ export const site = {
   intro:
     'This is a personal space for sharing ideas and work around security operations, incident response, detection engineering, and security governance. Practical notes from real-world experience.',
   links: {
-    linkedin: '#',
-    github: '#',
-    email: 'mailto:hello@example.com',
+    linkedin: 'https://www.linkedin.com/in/jan-gennat',
+    github: 'https://github.com/Ozel0t-G',
+    email: 'mailto:ozel0t.website@use.startmail.com',
   },
 };
