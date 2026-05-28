@@ -1,4 +1,5 @@
 import { site } from '../data/site.js';
+import { Link } from 'react-router-dom';
 
 const footerLinks = [
   {
@@ -35,19 +36,24 @@ function Footer() {
     <footer className="site-footer">
       <div className="container footer-inner">
         <p>&copy; 2024 {site.name}</p>
-        <div className="footer-links" aria-label="Footer links">
-          {footerLinks.map((link) => (
-            <a
-              key={link.label}
-              href={link.href}
-              target={link.href.startsWith('mailto:') ? undefined : '_blank'}
-              rel={link.href.startsWith('mailto:') ? undefined : 'noopener noreferrer'}
-              aria-label={link.label}
-              title={link.label}
-            >
-              {link.icon}
-            </a>
-          ))}
+        <div className="footer-actions">
+          <Link className="footer-legal-link" to="/impressum">
+            Impressum
+          </Link>
+          <div className="footer-links" aria-label="Footer links">
+            {footerLinks.map((link) => (
+              <a
+                key={link.label}
+                href={link.href}
+                target={link.href.startsWith('mailto:') ? undefined : '_blank'}
+                rel={link.href.startsWith('mailto:') ? undefined : 'noopener noreferrer'}
+                aria-label={link.label}
+                title={link.label}
+              >
+                {link.icon}
+              </a>
+            ))}
+          </div>
         </div>
       </div>
     </footer>

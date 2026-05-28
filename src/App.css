@@ -650,6 +650,22 @@ hr {
   margin: 0;
 }
 
+.footer-actions {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+}
+
+.footer-legal-link {
+  color: var(--muted);
+  transition: color 180ms ease;
+}
+
+.footer-legal-link:hover,
+.footer-legal-link:focus-visible {
+  color: var(--accent);
+}
+
 .footer-links {
   display: flex;
   gap: 12px;
@@ -681,6 +697,16 @@ hr {
   border-color: var(--border-strong);
   background: var(--accent-soft);
   color: var(--accent);
+}
+
+.legal-content h2 {
+  margin: 34px 0 12px;
+  color: var(--text);
+  font-size: 22px;
+}
+
+.legal-content p {
+  margin-bottom: 20px;
 }
 
 @media (max-width: 900px) {
@@ -808,6 +834,11 @@ hr {
   }
 
   .footer-inner {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .footer-actions {
     flex-direction: column;
     gap: 12px;
   }
