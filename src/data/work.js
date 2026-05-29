@@ -6,15 +6,15 @@ export const workItems = [
     linkLabel: 'View on GitHub',
   },
   {
-    title: 'Audity — Streamline the Cybersecurity Audit Process',
+    title: 'Audity Streamline the Cybersecurity Audit Process',
     description: 'Audity A local-first cybersecurity audit workspace for structured assessments, findings, risk registers, and reports.',
     link: 'https://github.com/Ozel0t-G/Audity-Streamline-the-Audit-Process',
     linkLabel: 'View on GitHub',
   },
   {
-    title: 'Detection Engineering Notes',
-    description: 'Detection patterns, analytics, and engineering references.',
-    link: '#',
+    title: 'GRC-Templates',
+    description: 'A practical security governance toolkit with reusable GRC templates, risk registers, checklists, and assessment tools.',
+    link: 'https://github.com/Ozel0t-G/GRC-Templates',
     linkLabel: 'View on GitHub',
   },
 ];
