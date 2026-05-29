@@ -11,9 +11,12 @@ function Header() {
   return (
     <header className="site-header">
       <nav className="nav container" aria-label="Primary navigation">
-        <NavLink className="brand" to="/" aria-label="Ozel0t home">
-          {site.name}
-        </NavLink>
+        <div className="brand-lockup">
+          <NavLink className="brand" to="/" aria-label="Ozel0t home">
+            {site.name}
+          </NavLink>
+          <span className="brand-tagline">Cybersecurity notes, field work and selected writing.</span>
+        </div>
         <div className="nav-links">
           {navItems.map((item) => (
             <NavLink key={item.path} to={item.path}>
