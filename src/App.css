@@ -182,6 +182,17 @@ p {
   z-index: 1;
 }
 
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
 .hero-section h1 {
   margin-bottom: 16px;
   color: var(--text);
@@ -189,6 +200,66 @@ p {
   font-weight: 720;
   letter-spacing: 0;
   line-height: 0.95;
+}
+
+.password-ticker {
+  display: inline-flex;
+  max-width: 100%;
+  margin: 18px 0 26px;
+  padding: 9px 11px;
+  overflow: hidden;
+  border: 1px solid rgba(93, 168, 255, 0.28);
+  border-radius: 6px;
+  background: rgba(3, 7, 18, 0.52);
+  box-shadow:
+    inset 0 0 0 1px rgba(255, 255, 255, 0.03),
+    0 18px 42px rgba(0, 0, 0, 0.24);
+  font-family: "SFMono-Regular", Consolas, "Liberation Mono", monospace;
+  font-size: clamp(13px, 2vw, 22px);
+  font-weight: 700;
+  line-height: 1;
+  white-space: nowrap;
+}
+
+.password-char {
+  display: inline-grid;
+  width: 0.74em;
+  height: 1.18em;
+  place-items: center;
+  margin-right: 0.03em;
+  border-radius: 3px;
+  background: rgba(7, 17, 31, 0.62);
+  text-shadow: 0 0 12px currentColor;
+  animation: split-flap 420ms steps(4, end);
+}
+
+.password-char-letter {
+  color: #75d7ff;
+}
+
+.password-char-number {
+  color: #ffd166;
+}
+
+.password-char-symbol {
+  color: #7dffb2;
+}
+
+@keyframes split-flap {
+  0% {
+    opacity: 0.25;
+    transform: translateY(-0.22em) rotateX(74deg);
+  }
+
+  55% {
+    opacity: 1;
+    transform: translateY(0.04em) rotateX(-18deg);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0) rotateX(0deg);
+  }
 }
 
 .hero-subtitle {

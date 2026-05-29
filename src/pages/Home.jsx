@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import NoteList from '../components/NoteList.jsx';
+import PasswordTicker from '../components/PasswordTicker.jsx';
 import SectionHeading from '../components/SectionHeading.jsx';
 import TopicPills from '../components/TopicPills.jsx';
 import WorkList from '../components/WorkList.jsx';
@@ -16,7 +17,8 @@ function Home() {
     <>
       <section className="hero-section" style={{ '--hero-image': heroImage }}>
         <div className="container">
-          <h1>{site.headline}</h1>
+          <h1 className="sr-only">{site.name}</h1>
+          <PasswordTicker />
           <p className="hero-subtitle">{site.subtitle}</p>
           <p className="hero-intro">{site.intro}</p>
           <div className="link-row">
